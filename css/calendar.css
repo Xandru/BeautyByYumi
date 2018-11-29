@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+.calendar {
+    background-color: #ebbbaa;
+    border-radius: 25px 25px 0px 0px;
+    padding-top: 1em;
+    height: auto;
+    
+}
+
+@media (min-width:20em)  { /* smartphones, iPhone, portrait 480x320 phones. min-width:320px */ 
+    .calendar {
+        margin-left: auto;
+        margin-right: auto;
+        width: 20rem;
+    }
+}
+@media (min-width:22.5em){ /* Galaxy S5 */
+    .calendar {
+        width: 22.4em;
+    }
+}
+@media (min-width:24em){ /* iPhone 5/SE */
+
+}
+@media (min-width:25em){ /* iPhone 6/7/8 */
+    .calendar {
+        width: 23.45em;
+    }
+}
+/*
+@media (min-width:27em){  iPhone 6/7/8 Plus & Pixel 2/2XL } */
+
+@media (min-width:30.06em)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. min-width:481px */ 
+    .calendar {
+        margin-left: 1.6em;
+        margin-right: auto;
+    }
+}
+@media (min-width:40.06em)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones. min-width:641px */ 
+    .calendar {
+        margin-right: 1em;
+        float: left;
+    }
+}
+@media (min-width:48em){ /* iPad */
+    .calendar {
+        margin-right: 1em;
+        width: 24rem;
+        float: left;
+    }   
+    .calDay,
+    .calBlock {
+        width: 3em;
+        height: 3em;
+    }
+}
+@media (min-width:60.06em)  { /* tablet, landscape iPad, lo-res laptops ands desktops. min-width:961px */ 
+    .calendar {
+        margin-left: 6em;
+    }
+}
+/*
+@media (min-width:64.06em) {  big landscape tablets, laptops, and desktops. min-width:1025px } */
+@media (min-width:80.06em) { /* hi-res laptops and desktops. min-width:1281px */ 
+    .calendar {
+        margin-left: 14em;
+    }
+}
+
+.calendar-month{
+    color: white;
+}
+
+.calendar-days {
+    background-color: #ebbbaa;
+    color: black;
+}
+
+.material-icons {
+    width: 15%;
+}
+
+.monthHead {
+    width: 70%;
+}
+
+.material-icons,
+.monthHead {
+    display: inline;
+    float: left;
+}
+
+.calDay,
+.calBlock {
+    display: inline-block;    
+    padding: .4em;
+    width: 2.7em;
+    height: 2.7em;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 200%;
+}
+
+.disable {
+    opacity: .8;
+    background-color: #ebbbaa;
+}
+
+.daySelect {
+    background-color: white;
+}

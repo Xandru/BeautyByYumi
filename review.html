@@ -1,0 +1,35 @@
+<h1 class="section-title">Spread the Word!</h1>
+            <button class="btn-comment">Show Comments/Reviews</button>
+            <div class="container">
+                <div class="commentList">
+                    <!-- Create a JS for loop that prints out comments -->
+                    <p class="commentList-name">Name (Regular Customer?)</p>
+                    <p class="commentList-message">***Comment***</p>
+                    <p class="commentList-rating">Rating</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="comment-form">
+                    <form action="/post_comment.php" method="POST" autocomplete="on">
+                        <fieldset>
+                            Your Name:<br> <!-- auto focus when user scrolls to item -->
+                            <input type="text" name="comment-author" placeholder="First Name" autocomplete="on" required><br>
+                            Your Email:<br>
+                            <input type="email" name="comment-email" placeholder="beautybyyx@gmail.com" autocomplete="on" required><br>
+                            Month of service:<br>
+                            <input type="month" name="comment-date" required><br>
+                            <select name="star">
+                                <option value="1"></option>
+                                <option value="2"></option>
+                                <option value="3"></option>
+                                <option value="4"></option>
+                                <option value="5"></option>
+                            </select>
+                            Your Comment/Review:<br>
+                            <textarea name="comment-message" class="comment-message-style" placeholder="How did I do? Do you like the quality of my service? Were you comfortable and/or did you enjoy your time?" required> 
+                            </textarea><br>
+                            <input type="submit" value="submit">
+                        </fieldset>
+                    </form>
+                </div>
+            </div>

@@ -1,0 +1,3 @@
+#d4938b - dark
+#f7bfb4 - med
+#ebbbaa; - light

@@ -1,0 +1,405 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 11, 2018, 6:40:47 PM
+    Author     : Paul Andrew Samson
+*/
+
+* {
+    box-sizing: border-box;
+    transition: all ease-in-out 250ms;
+}
+body {
+    margin:0;
+    /*font-family: '', sans-serif;*/
+    text-align: center;
+    background-color: white;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    padding: .5em;
+    margin: 0 auto;
+    max-width: 100%;
+
+}
+
+.hidden {
+    display: none;
+}
+
+/* typography
+==================== */
+
+
+.section-title {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.about-info {
+    font-size: 1.2rem;
+    text-align: justify;
+    margin: 0;
+    padding: 1em;
+}
+
+.error {
+    color: red;
+}
+
+/* items
+==================== */
+/*buttons*/
+.button {
+    display: inline-block;
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-width: 2px;
+    border-style: solid;
+    padding: .5em 1.75em;
+    color: #d4938b;
+}
+
+.button-small {
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+/* header
+==================== */
+
+header {
+    /*position: absolute;*/
+    margin-top: 1em;    
+}
+
+nav {
+    margin: 1em;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin: .5em;
+}
+
+nav a {
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .8rem;
+    padding: .7em;
+    color: #d4938b;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #f7bfb4;
+}
+
+.nav-bottombar {
+    border-bottom: 6px solid #ccc;
+    border-color: #d4938b;
+    border-radius: 5px;
+}
+
+.nav-topbar {
+    border-top: 6px solid #ccc;
+    border-color: #d4938b;
+    border-radius: 5px;
+}
+
+.logo {
+    height: auto;  
+}
+
+@media (min-width:48rem){ /* iPad */
+    nav li{
+        margin: 1em 3em 1em 3em;
+    }
+}
+/* about
+==================== */
+
+.home-about {
+    background-color: white;
+}
+
+.slider {
+    overflow: hidden;
+    height: auto;
+}
+
+.slider figure {
+    position: relative;
+    width: 50rem;
+    margin: 0;
+    -webkit-animation: 25s css-animation-slide infinite;
+}
+
+.slider figure div{
+    width: 15rem;
+    float: left;
+}
+
+.slider figure img {
+    width: 15rem;
+}
+
+@-webkit-keyframes css-animation-slide {
+    from { left: 0; }
+    15% { left: 0; }
+    22% { left: -15rem; }
+    35% { left: -15rem; }
+    42% { left: -30rem; }
+    55% { left: -30rem; }
+    62% { left: -15rem; }
+    75% { left: -15rem; }
+    82% { left: 0; }
+    100% { left: 0; }
+}
+
+.slider-frame {
+    width: 15em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width:48rem){ /* iPad */
+    .slider-frame {
+        width: 20rem;
+    }
+    .slider figure {
+        width: 60rem;
+    }
+    .slider figure div {
+        width: 20rem;
+    }
+    .slider figure img {
+        width: 20rem;
+    }
+
+    @-webkit-keyframes css-animation-slide {
+        from { left: 0; }
+        15% { left: 0; }
+        22% { left: -20rem; }
+        35% { left: -20rem; }
+        42% { left: -40rem; }
+        55% { left: -40rem; }
+        62% { left: -20rem; }
+        75% { left: -20rem; }
+        82% { left: 0; }
+        100% { left: 0; }
+    }
+}
+
+@media (min-width:64rem){ /* iPad Pro */
+    .slider-frame{
+        margin-left: 5em;
+        margin-right: 1em;
+        float: left;
+    }
+    .about-info {
+        margin-bottom: 1em;
+        margin-right: 3em;
+        padding-top: 4em;
+    }
+}
+
+@media (min-width:76rem){ /* Desktop */
+    .container {
+        width: 80rem;
+    }
+    .slider-frame{
+        margin-left: 5em;
+        margin-right: 1em;
+        float: left;
+    }
+}
+
+/* Home Gallery */
+
+@media (min-width:64rem) {
+    .home-gallery {
+        margin: 5em 0;
+    }
+}
+
+@media (min-width:76rem) {
+    .home-gallery {
+        margin: 7em 0;
+    }
+}
+
+
+.gallery-board{
+    margin-top: 1em;
+}
+.gallery-item {
+    margin: 0;
+    position: relative;
+
+}
+
+.gallery-item img {
+    display: block;
+}
+
+.gallery-desc {
+    position: absolute;
+    z-index: 100;
+    bottom: 0em;
+    left: 0;
+    right: 0;
+    color: white;
+    background-color: rgba(0,0,0,.40);
+    padding-bottom: 1em;
+}
+
+@media (min-width: 37rem) {
+    .gallery-item {
+        width: 50%;
+        float: left;
+    }
+
+}
+
+@media (min-width: 49rem) {
+    .gallery-board {
+        padding-left: 12%;
+        padding-right: 12%;
+    }
+    
+    .gallery-item {
+        /*width: 33.3333334%;*/
+        width: 50%;
+        overflow: hidden;
+    }
+
+    .gallery-desc {
+        transform: translateY(100%);
+    }
+    .gallery-item:hover .gallery-desc {
+        transform: translateY(0%);
+    }
+}
+/*
+.home-gallery {
+    float: left;
+    margin: 0;
+}
+.gallery-item {
+    height: 20rem;
+}
+*/
+
+.home-review {
+    background-color: #ebbbaa;    
+}
+
+@media (min-width:20em)  {
+    .social {
+        margin-top: 0%;
+    }
+}
+
+@media (min-width:37rem) {
+    .social {
+        margin-top: 70%;
+    }
+}
+
+@media (min-width:49rem) {
+    .social {
+        margin-top: 55%;
+    }
+}
+
+@media (min-width:77rem) {
+    .social {
+        margin-top: 45em;
+    }
+}
+
+
+/* Schedule */
+
+fieldset {
+    /*display: inline-block;*/
+    margin: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-block-start: 0;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    padding-block-end: 0;
+    padding: 0;
+    border-style: none;
+    border-width: 0;
+    margin-left: -.5em;
+}
+
+.form-inputs,
+#terms {
+    text-align: left;
+    padding-left: .5em;
+    padding-right: .5em;
+}
+
+.form-inputs {
+    min-width: 20rem;
+}
+
+#terms {
+    clear: left;
+}
+
+@media (min-width:48rem){ /* iPad */
+    .row {
+        padding: .5em;
+    }
+
+    input,
+    textarea {
+        margin-top: .5em;
+    }
+
+    textarea {
+        width: 18rem;
+        height: 6rem;
+    }
+    fieldset {
+        margin-left: 0;
+    }
+}
+
+.social-button {
+    padding: .7em;
+}
+
+
+
+footer {
+    background-color: #ebbbaa;
+    padding-top: .1em;
+    padding-bottom: .1em
+}
+.col-1 {
+}
+.unstyled-list { 
+    list-style-type: none;
+}
